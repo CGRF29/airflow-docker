@@ -1,18 +1,18 @@
 ![image](https://github.com/CGRF29/airflow-docker/assets/88048910/e287ba22-cfe8-4286-95cc-632bd446b7b7)
 Airflow
 
-Conceptos básicos
-DAG
-Bash Operator
-Python Operator
-Custom Operator
-Orquestando DAF
-Monitoreo
-Trigger Rules
-ExternalTaskSensor
-FileSensor
-Xcoms
-BranchPythonOperator
+Practicas Conceptos básicos
+- DAG
+- Bash Operator
+- Python Operator
+- Custom Operator
+- Orquestando DAF
+- Monitoreo
+- Trigger Rules
+- ExternalTaskSensor
+- FileSensor
+- Xcoms
+- BranchPythonOperator
 
 ------------------------
 
