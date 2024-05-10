@@ -16,7 +16,7 @@ Practicas Conceptos básicos
 
 ------------------------
 
-Proyecto SpaceX - Airflow 
+Proyecto SpaceX 🚀
 
 Descripción: 
 Los equipos de analistas y marketing de Platzi necesitan datos de los estudiantes que han accedido al satélite e información del historial de eventos de SpaceX, por lo tanto necesitamos que nos ayudes a ejecutar las siguientes tareas.
