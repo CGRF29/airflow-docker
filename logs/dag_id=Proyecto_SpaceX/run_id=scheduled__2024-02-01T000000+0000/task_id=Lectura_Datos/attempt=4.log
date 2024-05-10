@@ -1,0 +1,64 @@
+[2024-05-09T20:20:10.384+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-09T20:20:10.404+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Lectura_Datos scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-09T20:20:10.417+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Lectura_Datos scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-09T20:20:10.420+0000] {taskinstance.py:2306} INFO - Starting attempt 4 of 4
+[2024-05-09T20:20:10.543+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): Lectura_Datos> on 2024-02-01 00:00:00+00:00
+[2024-05-09T20:20:10.557+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1545) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-09T20:20:10.558+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Proyecto_SpaceX', 'Lectura_Datos', 'scheduled__2024-02-01T00:00:00+00:00', '--job-id', '991', '--raw', '--subdir', 'DAGS_FOLDER/Proyecto_SpaceX.py', '--cfg-path', '/tmp/tmpvt9h0p0u']
+[2024-05-09T20:20:10.561+0000] {standard_task_runner.py:63} INFO - Started process 1547 to run task
+[2024-05-09T20:20:10.562+0000] {standard_task_runner.py:91} INFO - Job 991: Subtask Lectura_Datos
+[2024-05-09T20:20:10.623+0000] {task_command.py:426} INFO - Running <TaskInstance: Proyecto_SpaceX.Lectura_Datos scheduled__2024-02-01T00:00:00+00:00 [running]> on host 7a81a983afb0
+[2024-05-09T20:20:10.710+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Proyecto_SpaceX' AIRFLOW_CTX_TASK_ID='Lectura_Datos' AIRFLOW_CTX_EXECUTION_DATE='2024-02-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-01T00:00:00+00:00'
+[2024-05-09T20:20:10.712+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-09T20:20:10.728+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-09T20:20:10.729+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'ls /tmp && head /tmp/response_20240201.txt']
+[2024-05-09T20:20:10.743+0000] {subprocess.py:86} INFO - Output:
+[2024-05-09T20:20:10.745+0000] {subprocess.py:93} INFO - ***tmp7ukk9zrr
+[2024-05-09T20:20:10.746+0000] {subprocess.py:93} INFO - platzi_data_20240101.csv
+[2024-05-09T20:20:10.746+0000] {subprocess.py:93} INFO - platzi_data_20240201.csv
+[2024-05-09T20:20:10.747+0000] {subprocess.py:93} INFO - platzi_data_20240301.csv
+[2024-05-09T20:20:10.748+0000] {subprocess.py:93} INFO - pymp-lgtt6ocg
+[2024-05-09T20:20:10.748+0000] {subprocess.py:93} INFO - response_20240101.txt
+[2024-05-09T20:20:10.749+0000] {subprocess.py:93} INFO - response_20240201.txt
+[2024-05-09T20:20:10.750+0000] {subprocess.py:93} INFO - response_20240301.txt
+[2024-05-09T20:20:10.750+0000] {subprocess.py:93} INFO - Confirmación, puede proceder
+[2024-05-09T20:20:10.751+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-09T20:20:10.752+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-09T20:20:10.771+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Proyecto_SpaceX, task_id=Lectura_Datos, run_id=scheduled__2024-02-01T00:00:00+00:00, execution_date=20240201T000000, start_date=20240509T202010, end_date=20240509T202010
+[2024-05-09T20:20:10.818+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-09T20:20:10.838+0000] {taskinstance.py:3498} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2024-05-09T20:20:10.872+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-10T05:55:06.601+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-10T05:55:06.622+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Lectura_Datos scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-10T05:55:06.629+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Lectura_Datos scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-10T05:55:06.630+0000] {taskinstance.py:2306} INFO - Starting attempt 4 of 4
+[2024-05-10T05:55:06.766+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): Lectura_Datos> on 2024-02-01 00:00:00+00:00
+[2024-05-10T05:55:06.773+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=735) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-10T05:55:06.775+0000] {standard_task_runner.py:63} INFO - Started process 737 to run task
+[2024-05-10T05:55:06.774+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Proyecto_SpaceX', 'Lectura_Datos', 'scheduled__2024-02-01T00:00:00+00:00', '--job-id', '1065', '--raw', '--subdir', 'DAGS_FOLDER/Proyecto_SpaceX.py', '--cfg-path', '/tmp/tmp1yzs1wrx']
+[2024-05-10T05:55:06.776+0000] {standard_task_runner.py:91} INFO - Job 1065: Subtask Lectura_Datos
+[2024-05-10T05:55:06.818+0000] {task_command.py:426} INFO - Running <TaskInstance: Proyecto_SpaceX.Lectura_Datos scheduled__2024-02-01T00:00:00+00:00 [running]> on host 1b7f0b10dd99
+[2024-05-10T05:55:06.892+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Proyecto_SpaceX' AIRFLOW_CTX_TASK_ID='Lectura_Datos' AIRFLOW_CTX_EXECUTION_DATE='2024-02-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-01T00:00:00+00:00'
+[2024-05-10T05:55:06.894+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-10T05:55:06.908+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-10T05:55:06.909+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'ls /tmp && head /tmp/response_20240201.txt']
+[2024-05-10T05:55:06.919+0000] {subprocess.py:86} INFO - Output:
+[2024-05-10T05:55:06.922+0000] {subprocess.py:93} INFO - ***tmp9a5emesb
+[2024-05-10T05:55:06.922+0000] {subprocess.py:93} INFO - platzi_data_20240101.csv
+[2024-05-10T05:55:06.923+0000] {subprocess.py:93} INFO - platzi_data_20240201.csv
+[2024-05-10T05:55:06.923+0000] {subprocess.py:93} INFO - platzi_data_20240301.csv
+[2024-05-10T05:55:06.924+0000] {subprocess.py:93} INFO - pymp-uyxtzsi7
+[2024-05-10T05:55:06.924+0000] {subprocess.py:93} INFO - response_20240101.txt
+[2024-05-10T05:55:06.924+0000] {subprocess.py:93} INFO - response_20240201.txt
+[2024-05-10T05:55:06.925+0000] {subprocess.py:93} INFO - response_20240301.txt
+[2024-05-10T05:55:06.925+0000] {subprocess.py:93} INFO - Confirmación, puede proceder
+[2024-05-10T05:55:06.926+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-10T05:55:06.927+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-10T05:55:06.945+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Proyecto_SpaceX, task_id=Lectura_Datos, run_id=scheduled__2024-02-01T00:00:00+00:00, execution_date=20240201T000000, start_date=20240510T055506, end_date=20240510T055506
+[2024-05-10T05:55:06.989+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-10T05:55:07.009+0000] {taskinstance.py:3498} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2024-05-10T05:55:07.015+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,1 @@
+[2024-05-10T06:27:55.930+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: Proyecto_SpaceX_v1.Esperar_archivo scheduled__2024-04-01T00:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

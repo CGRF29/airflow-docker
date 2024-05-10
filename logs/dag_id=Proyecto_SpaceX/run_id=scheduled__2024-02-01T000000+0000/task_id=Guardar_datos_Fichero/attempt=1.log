@@ -1,0 +1,60 @@
+[2024-05-09T18:53:59.411+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-09T18:53:59.433+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Guardar_datos_Fichero scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-09T18:53:59.551+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Guardar_datos_Fichero scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-09T18:53:59.552+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-09T18:53:59.572+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): Guardar_datos_Fichero> on 2024-02-01 00:00:00+00:00
+[2024-05-09T18:53:59.577+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=155) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-09T18:53:59.579+0000] {standard_task_runner.py:63} INFO - Started process 157 to run task
+[2024-05-09T18:53:59.579+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Proyecto_SpaceX', 'Guardar_datos_Fichero', 'scheduled__2024-02-01T00:00:00+00:00', '--job-id', '927', '--raw', '--subdir', 'DAGS_FOLDER/Proyecto_SpaceX.py', '--cfg-path', '/tmp/tmpzh5ab2cq']
+[2024-05-09T18:53:59.581+0000] {standard_task_runner.py:91} INFO - Job 927: Subtask Guardar_datos_Fichero
+[2024-05-09T18:53:59.619+0000] {task_command.py:426} INFO - Running <TaskInstance: Proyecto_SpaceX.Guardar_datos_Fichero scheduled__2024-02-01T00:00:00+00:00 [running]> on host 7a81a983afb0
+[2024-05-09T18:53:59.704+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Proyecto_SpaceX' AIRFLOW_CTX_TASK_ID='Guardar_datos_Fichero' AIRFLOW_CTX_EXECUTION_DATE='2024-02-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-01T00:00:00+00:00'
+[2024-05-09T18:53:59.705+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-09T18:53:59.727+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-09T18:53:59.728+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-09T18:53:59.736+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Proyecto_SpaceX, task_id=Guardar_datos_Fichero, run_id=scheduled__2024-02-01T00:00:00+00:00, execution_date=20240201T000000, start_date=20240509T185359, end_date=20240509T185359
+[2024-05-09T18:53:59.793+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-09T18:53:59.817+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-09T18:53:59.826+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-09T19:17:56.078+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-09T19:17:56.114+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Guardar_datos_Fichero scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-09T19:17:56.122+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Guardar_datos_Fichero scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-09T19:17:56.123+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-09T19:17:56.205+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): Guardar_datos_Fichero> on 2024-02-01 00:00:00+00:00
+[2024-05-09T19:17:56.213+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=518) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-09T19:17:56.215+0000] {standard_task_runner.py:63} INFO - Started process 520 to run task
+[2024-05-09T19:17:56.215+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Proyecto_SpaceX', 'Guardar_datos_Fichero', 'scheduled__2024-02-01T00:00:00+00:00', '--job-id', '939', '--raw', '--subdir', 'DAGS_FOLDER/Proyecto_SpaceX.py', '--cfg-path', '/tmp/tmpqjs5q80o']
+[2024-05-09T19:17:56.217+0000] {standard_task_runner.py:91} INFO - Job 939: Subtask Guardar_datos_Fichero
+[2024-05-09T19:17:56.816+0000] {task_command.py:426} INFO - Running <TaskInstance: Proyecto_SpaceX.Guardar_datos_Fichero scheduled__2024-02-01T00:00:00+00:00 [running]> on host 7a81a983afb0
+[2024-05-09T19:17:56.878+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Proyecto_SpaceX' AIRFLOW_CTX_TASK_ID='Guardar_datos_Fichero' AIRFLOW_CTX_EXECUTION_DATE='2024-02-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-01T00:00:00+00:00'
+[2024-05-09T19:17:56.879+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-09T19:17:56.891+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-09T19:17:56.892+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-09T19:17:56.900+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Proyecto_SpaceX, task_id=Guardar_datos_Fichero, run_id=scheduled__2024-02-01T00:00:00+00:00, execution_date=20240201T000000, start_date=20240509T191756, end_date=20240509T191756
+[2024-05-09T19:17:56.953+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-09T19:17:57.085+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-09T19:17:57.241+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-09T21:01:28.831+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-09T21:01:28.852+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Guardar_datos_Fichero scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-09T21:01:28.861+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Guardar_datos_Fichero scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-09T21:01:28.862+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-09T21:01:29.026+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): Guardar_datos_Fichero> on 2024-02-01 00:00:00+00:00
+[2024-05-09T21:01:29.033+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1858) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-09T21:01:29.036+0000] {standard_task_runner.py:63} INFO - Started process 1862 to run task
+[2024-05-09T21:01:29.035+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Proyecto_SpaceX', 'Guardar_datos_Fichero', 'scheduled__2024-02-01T00:00:00+00:00', '--job-id', '1010', '--raw', '--subdir', 'DAGS_FOLDER/Proyecto_SpaceX.py', '--cfg-path', '/tmp/tmpj9geq9gh']
+[2024-05-09T21:01:29.037+0000] {standard_task_runner.py:91} INFO - Job 1010: Subtask Guardar_datos_Fichero
+[2024-05-09T21:01:29.083+0000] {task_command.py:426} INFO - Running <TaskInstance: Proyecto_SpaceX.Guardar_datos_Fichero scheduled__2024-02-01T00:00:00+00:00 [running]> on host 7a81a983afb0
+[2024-05-09T21:01:29.155+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Proyecto_SpaceX' AIRFLOW_CTX_TASK_ID='Guardar_datos_Fichero' AIRFLOW_CTX_EXECUTION_DATE='2024-02-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-01T00:00:00+00:00'
+[2024-05-09T21:01:29.156+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-09T21:01:29.179+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-09T21:01:29.180+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-09T21:01:29.188+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Proyecto_SpaceX, task_id=Guardar_datos_Fichero, run_id=scheduled__2024-02-01T00:00:00+00:00, execution_date=20240201T000000, start_date=20240509T210128, end_date=20240509T210129
+[2024-05-09T21:01:29.211+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-09T21:01:29.232+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-09T21:01:29.245+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

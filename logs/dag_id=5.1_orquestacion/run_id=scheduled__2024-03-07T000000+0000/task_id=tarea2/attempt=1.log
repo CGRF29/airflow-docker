@@ -1,0 +1,48 @@
+[2024-05-07T23:41:09.021+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-07T23:41:09.048+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 5.1_orquestacion.tarea2 scheduled__2024-03-07T00:00:00+00:00 [queued]>
+[2024-05-07T23:41:09.058+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 5.1_orquestacion.tarea2 scheduled__2024-03-07T00:00:00+00:00 [queued]>
+[2024-05-07T23:41:09.060+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-07T23:41:09.075+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): tarea2> on 2024-03-07 00:00:00+00:00
+[2024-05-07T23:41:09.081+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2871) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-07T23:41:09.083+0000] {standard_task_runner.py:63} INFO - Started process 2875 to run task
+[2024-05-07T23:41:09.083+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', '5.1_orquestacion', 'tarea2', 'scheduled__2024-03-07T00:00:00+00:00', '--job-id', '81', '--raw', '--subdir', 'DAGS_FOLDER/051_orquestacion.py', '--cfg-path', '/tmp/tmpjpa5aaf8']
+[2024-05-07T23:41:09.084+0000] {standard_task_runner.py:91} INFO - Job 81: Subtask tarea2
+[2024-05-07T23:41:09.127+0000] {task_command.py:426} INFO - Running <TaskInstance: 5.1_orquestacion.tarea2 scheduled__2024-03-07T00:00:00+00:00 [running]> on host 521bf890d837
+[2024-05-07T23:41:09.211+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='5.1_orquestacion' AIRFLOW_CTX_TASK_ID='tarea2' AIRFLOW_CTX_EXECUTION_DATE='2024-03-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-07T00:00:00+00:00'
+[2024-05-07T23:41:09.212+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-07T23:41:09.224+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-07T23:41:09.226+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "sleep 2 && echo 'Tarea 2'"]
+[2024-05-07T23:41:09.234+0000] {subprocess.py:86} INFO - Output:
+[2024-05-07T23:41:11.248+0000] {subprocess.py:93} INFO - Tarea 2
+[2024-05-07T23:41:11.249+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-07T23:41:11.250+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-07T23:41:11.354+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=5.1_orquestacion, task_id=tarea2, run_id=scheduled__2024-03-07T00:00:00+00:00, execution_date=20240307T000000, start_date=20240507T234109, end_date=20240507T234111
+[2024-05-07T23:41:11.673+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-07T23:41:11.706+0000] {taskinstance.py:3498} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2024-05-07T23:41:11.709+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-07T23:46:27.978+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-07T23:46:28.000+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 5.1_orquestacion.tarea2 scheduled__2024-03-07T00:00:00+00:00 [queued]>
+[2024-05-07T23:46:28.045+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 5.1_orquestacion.tarea2 scheduled__2024-03-07T00:00:00+00:00 [queued]>
+[2024-05-07T23:46:28.046+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-07T23:46:28.059+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): tarea2> on 2024-03-07 00:00:00+00:00
+[2024-05-07T23:46:28.065+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3454) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-07T23:46:28.067+0000] {standard_task_runner.py:63} INFO - Started process 3455 to run task
+[2024-05-07T23:46:28.066+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', '5.1_orquestacion', 'tarea2', 'scheduled__2024-03-07T00:00:00+00:00', '--job-id', '210', '--raw', '--subdir', 'DAGS_FOLDER/051_orquestacion.py', '--cfg-path', '/tmp/tmpyr4lbgsb']
+[2024-05-07T23:46:28.068+0000] {standard_task_runner.py:91} INFO - Job 210: Subtask tarea2
+[2024-05-07T23:46:28.112+0000] {task_command.py:426} INFO - Running <TaskInstance: 5.1_orquestacion.tarea2 scheduled__2024-03-07T00:00:00+00:00 [running]> on host 521bf890d837
+[2024-05-07T23:46:28.186+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='5.1_orquestacion' AIRFLOW_CTX_TASK_ID='tarea2' AIRFLOW_CTX_EXECUTION_DATE='2024-03-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-07T00:00:00+00:00'
+[2024-05-07T23:46:28.190+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-07T23:46:28.200+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-07T23:46:28.201+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "sleep 2 && echo 'Tarea 2'"]
+[2024-05-07T23:46:28.209+0000] {subprocess.py:86} INFO - Output:
+[2024-05-07T23:46:30.213+0000] {subprocess.py:93} INFO - Tarea 2
+[2024-05-07T23:46:30.220+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-07T23:46:30.222+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-07T23:46:30.268+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=5.1_orquestacion, task_id=tarea2, run_id=scheduled__2024-03-07T00:00:00+00:00, execution_date=20240307T000000, start_date=20240507T234628, end_date=20240507T234630
+[2024-05-07T23:46:30.297+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-07T23:46:30.335+0000] {taskinstance.py:3498} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2024-05-07T23:46:30.339+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

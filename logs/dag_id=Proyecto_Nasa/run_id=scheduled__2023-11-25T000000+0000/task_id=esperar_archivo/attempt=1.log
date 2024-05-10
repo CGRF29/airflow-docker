@@ -1,0 +1,26 @@
+[2024-05-10T06:00:25.558+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-10T06:00:25.693+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Proyecto_Nasa.esperar_archivo scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2024-05-10T06:00:25.700+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Proyecto_Nasa.esperar_archivo scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2024-05-10T06:00:25.702+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-10T06:00:25.713+0000] {taskinstance.py:2330} INFO - Executing <Task(FileSensor): esperar_archivo> on 2023-11-25 00:00:00+00:00
+[2024-05-10T06:00:25.719+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=943) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-10T06:00:25.720+0000] {standard_task_runner.py:63} INFO - Started process 945 to run task
+[2024-05-10T06:00:25.720+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Proyecto_Nasa', 'esperar_archivo', 'scheduled__2023-11-25T00:00:00+00:00', '--job-id', '1098', '--raw', '--subdir', 'DAGS_FOLDER/Proyecto_SpaceX_v1.py', '--cfg-path', '/tmp/tmpgclwg5z8']
+[2024-05-10T06:00:25.722+0000] {standard_task_runner.py:91} INFO - Job 1098: Subtask esperar_archivo
+[2024-05-10T06:00:25.761+0000] {task_command.py:426} INFO - Running <TaskInstance: Proyecto_Nasa.esperar_archivo scheduled__2023-11-25T00:00:00+00:00 [running]> on host 1b7f0b10dd99
+[2024-05-10T06:00:25.826+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Proyecto_Nasa' AIRFLOW_CTX_TASK_ID='esperar_archivo' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T00:00:00+00:00'
+[2024-05-10T06:00:25.827+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-10T06:00:25.837+0000] {baseoperator.py:399} WARNING - FileSensor.execute cannot be called outside TaskInstance!
+[2024-05-10T06:00:25.845+0000] {base.py:84} INFO - Using connection ID 'fs_default' for task execution.
+[2024-05-10T06:00:25.845+0000] {filesystem.py:85} INFO - Poking for file /tmp/platzi_data_20231125.csv
+[2024-05-10T06:00:25.846+0000] {filesystem.py:89} INFO - Found File /tmp/platzi_data_20231125.csv last modified: 20240510060024
+[2024-05-10T06:00:25.847+0000] {base.py:294} INFO - Success criteria met. Exiting.
+[2024-05-10T06:00:25.847+0000] {filesystem.py:85} INFO - Poking for file /tmp/platzi_data_20231125.csv
+[2024-05-10T06:00:25.848+0000] {filesystem.py:89} INFO - Found File /tmp/platzi_data_20231125.csv last modified: 20240510060024
+[2024-05-10T06:00:25.848+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-10T06:00:25.856+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Proyecto_Nasa, task_id=esperar_archivo, run_id=scheduled__2023-11-25T00:00:00+00:00, execution_date=20231125T000000, start_date=20240510T060025, end_date=20240510T060025
+[2024-05-10T06:00:25.895+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-10T06:00:25.918+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-10T06:00:25.922+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

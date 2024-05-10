@@ -1,0 +1,26 @@
+[2024-05-10T06:24:27.943+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-10T06:24:28.104+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Proyecto_SpaceX_v1.Obtener_datos_SpaceX scheduled__2024-03-26T00:00:00+00:00 [queued]>
+[2024-05-10T06:24:28.114+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Proyecto_SpaceX_v1.Obtener_datos_SpaceX scheduled__2024-03-26T00:00:00+00:00 [queued]>
+[2024-05-10T06:24:28.118+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-10T06:24:28.149+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): Obtener_datos_SpaceX> on 2024-03-26 00:00:00+00:00
+[2024-05-10T06:24:28.157+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2156) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-10T06:24:28.159+0000] {standard_task_runner.py:63} INFO - Started process 2158 to run task
+[2024-05-10T06:24:28.160+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Proyecto_SpaceX_v1', 'Obtener_datos_SpaceX', 'scheduled__2024-03-26T00:00:00+00:00', '--job-id', '1304', '--raw', '--subdir', 'DAGS_FOLDER/Proyecto_SpaceX_v1.py', '--cfg-path', '/tmp/tmp_bce5pzw']
+[2024-05-10T06:24:28.162+0000] {standard_task_runner.py:91} INFO - Job 1304: Subtask Obtener_datos_SpaceX
+[2024-05-10T06:24:28.232+0000] {task_command.py:426} INFO - Running <TaskInstance: Proyecto_SpaceX_v1.Obtener_datos_SpaceX scheduled__2024-03-26T00:00:00+00:00 [running]> on host 1b7f0b10dd99
+[2024-05-10T06:24:28.373+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Proyecto_SpaceX_v1' AIRFLOW_CTX_TASK_ID='Obtener_datos_SpaceX' AIRFLOW_CTX_EXECUTION_DATE='2024-03-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-26T00:00:00+00:00'
+[2024-05-10T06:24:28.375+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-10T06:24:28.387+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-10T06:24:28.389+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "curl -o /tmp/history.json -L 'https://api.spacexdata.com/v4/history'"]
+[2024-05-10T06:24:28.402+0000] {subprocess.py:86} INFO - Output:
+[2024-05-10T06:24:28.410+0000] {subprocess.py:93} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2024-05-10T06:24:28.411+0000] {subprocess.py:93} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2024-05-10T06:24:28.669+0000] {subprocess.py:93} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  6756    0  6756    0     0  26036      0 --:--:-- --:--:-- --:--:-- 26084
+[2024-05-10T06:24:28.671+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-10T06:24:28.673+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-10T06:24:28.723+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Proyecto_SpaceX_v1, task_id=Obtener_datos_SpaceX, run_id=scheduled__2024-03-26T00:00:00+00:00, execution_date=20240326T000000, start_date=20240510T062428, end_date=20240510T062428
+[2024-05-10T06:24:28.776+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-10T06:24:28.805+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-10T06:24:28.826+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

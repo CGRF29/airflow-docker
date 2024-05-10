@@ -1,0 +1,136 @@
+[2024-05-07T23:54:23.946+0000] {processor.py:161} INFO - Started process (PID=4355) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:54:23.947+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:54:23.949+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:54:23.948+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:54:23.983+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:54:23.975+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/052_orquestacion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/052_orquestacion.py", line 15, in <module>
+    t1 = EmptyOperator(task_id='tarea1',
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmptyOperator (task_id: tarea1). Invalid arguments were:
+**kwargs: {'bash_command': "sleep 2 && echo 'Tarea 1'"}
+[2024-05-07T23:54:23.984+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:54:24.004+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.062 seconds
+[2024-05-07T23:54:54.854+0000] {processor.py:161} INFO - Started process (PID=4368) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:54:54.855+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:54:54.856+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:54:54.856+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:54:54.890+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:54:54.882+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/052_orquestacion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/052_orquestacion.py", line 15, in <module>
+    t1 = EmptyOperator(task_id='tarea1',
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to EmptyOperator (task_id: tarea1). Invalid arguments were:
+**kwargs: {'bash_command': "sleep 2 && echo 'Tarea 1'"}
+[2024-05-07T23:54:54.893+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:54:54.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.062 seconds
+[2024-05-07T23:55:08.581+0000] {processor.py:161} INFO - Started process (PID=4376) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:55:08.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:55:08.582+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:08.582+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:55:08.606+0000] {processor.py:840} INFO - DAG(s) '5.2_orquestacion' retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:55:08.691+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:08.690+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:5.2_orquestacion
+[2024-05-07T23:55:08.699+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:08.699+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:5.2_orquestacion
+[2024-05-07T23:55:08.713+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:08.713+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:5.2_orquestacion
+[2024-05-07T23:55:08.716+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:08.716+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-07T23:55:08.723+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:08.723+0000] {dag.py:3118} INFO - Creating ORM DAG for 5.2_orquestacion
+[2024-05-07T23:55:08.733+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:08.733+0000] {dag.py:3954} INFO - Setting next_dagrun for 5.2_orquestacion to 2024-03-01 00:00:00+00:00, run_after=2024-03-02 00:00:00+00:00
+[2024-05-07T23:55:08.790+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.214 seconds
+[2024-05-07T23:55:39.089+0000] {processor.py:161} INFO - Started process (PID=4389) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:55:39.101+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:55:39.102+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:39.102+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:55:39.150+0000] {processor.py:840} INFO - DAG(s) '5.2_orquestacion' retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:55:39.178+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:39.177+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-07T23:55:39.198+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:39.198+0000] {dag.py:3954} INFO - Setting next_dagrun for 5.2_orquestacion to 2024-03-01 00:00:00+00:00, run_after=2024-03-02 00:00:00+00:00
+[2024-05-07T23:55:39.218+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.134 seconds
+[2024-05-07T23:55:59.316+0000] {processor.py:161} INFO - Started process (PID=4401) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:55:59.317+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:55:59.319+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:59.318+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:55:59.346+0000] {processor.py:840} INFO - DAG(s) '5.2_orquestacion' retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:55:59.422+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:59.422+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-07T23:55:59.439+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:55:59.438+0000] {dag.py:3954} INFO - Setting next_dagrun for 5.2_orquestacion to 2024-03-04 07:00:00+00:00, run_after=2024-03-11 07:00:00+00:00
+[2024-05-07T23:55:59.506+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.195 seconds
+[2024-05-07T23:56:27.171+0000] {processor.py:161} INFO - Started process (PID=4408) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:56:27.178+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:56:27.182+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:56:27.181+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:56:27.233+0000] {processor.py:840} INFO - DAG(s) '5.2_orquestacion' retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:56:27.246+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:56:27.246+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-07T23:56:27.262+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:56:27.262+0000] {dag.py:3954} INFO - Setting next_dagrun for 5.2_orquestacion to 2024-03-04 07:00:00+00:00, run_after=2024-03-11 07:00:00+00:00
+[2024-05-07T23:56:27.282+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.115 seconds
+[2024-05-07T23:56:52.258+0000] {processor.py:161} INFO - Started process (PID=4416) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:56:52.259+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:56:52.260+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:56:52.260+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:56:52.287+0000] {processor.py:840} INFO - DAG(s) '5.2_orquestacion' retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:56:52.377+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:56:52.377+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-07T23:56:52.396+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:56:52.396+0000] {dag.py:3954} INFO - Setting next_dagrun for 5.2_orquestacion to 2024-01-01 07:00:00+00:00, run_after=2024-01-08 07:00:00+00:00
+[2024-05-07T23:56:52.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.168 seconds
+[2024-05-07T23:56:54.328+0000] {processor.py:161} INFO - Started process (PID=4417) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:56:54.329+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:56:54.330+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:56:54.329+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:56:54.398+0000] {processor.py:840} INFO - DAG(s) '5.2_orquestacion' retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:56:54.411+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:56:54.411+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-07T23:56:54.430+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:56:54.429+0000] {dag.py:3954} INFO - Setting next_dagrun for 5.2_orquestacion to 2024-01-01 07:00:00+00:00, run_after=2024-01-08 07:00:00+00:00
+[2024-05-07T23:56:54.454+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.131 seconds
+[2024-05-07T23:57:24.680+0000] {processor.py:161} INFO - Started process (PID=4430) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:57:24.683+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:57:24.686+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:57:24.686+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:57:24.726+0000] {processor.py:840} INFO - DAG(s) '5.2_orquestacion' retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:57:24.753+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:57:24.752+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-07T23:57:24.769+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:57:24.769+0000] {dag.py:3954} INFO - Setting next_dagrun for 5.2_orquestacion to 2024-01-01 07:00:00+00:00, run_after=2024-01-08 07:00:00+00:00
+[2024-05-07T23:57:24.797+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.122 seconds
+[2024-05-07T23:57:55.736+0000] {processor.py:161} INFO - Started process (PID=4443) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:57:55.736+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:57:55.737+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:57:55.737+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:57:55.755+0000] {processor.py:840} INFO - DAG(s) '5.2_orquestacion' retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:57:55.776+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:57:55.776+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-07T23:57:55.793+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:57:55.792+0000] {dag.py:3954} INFO - Setting next_dagrun for 5.2_orquestacion to 2024-01-01 07:00:00+00:00, run_after=2024-01-08 07:00:00+00:00
+[2024-05-07T23:57:55.811+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.080 seconds
+[2024-05-07T23:58:26.631+0000] {processor.py:161} INFO - Started process (PID=4456) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:58:26.632+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:58:26.633+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:58:26.633+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:58:26.655+0000] {processor.py:840} INFO - DAG(s) '5.2_orquestacion' retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:58:26.675+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:58:26.675+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-07T23:58:26.693+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:58:26.693+0000] {dag.py:3954} INFO - Setting next_dagrun for 5.2_orquestacion to 2024-03-11 07:00:00+00:00, run_after=2024-03-18 07:00:00+00:00
+[2024-05-07T23:58:26.712+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.086 seconds
+[2024-05-07T23:58:56.970+0000] {processor.py:161} INFO - Started process (PID=4470) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:58:56.971+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:58:56.972+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:58:56.971+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:58:57.006+0000] {processor.py:840} INFO - DAG(s) '5.2_orquestacion' retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:58:57.026+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:58:57.026+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-07T23:58:57.042+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:58:57.042+0000] {dag.py:3954} INFO - Setting next_dagrun for 5.2_orquestacion to 2024-05-06 07:00:00+00:00, run_after=2024-05-13 07:00:00+00:00
+[2024-05-07T23:58:57.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.130 seconds
+[2024-05-07T23:59:28.117+0000] {processor.py:161} INFO - Started process (PID=4489) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:59:28.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:59:28.146+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:59:28.146+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:59:28.167+0000] {processor.py:840} INFO - DAG(s) '5.2_orquestacion' retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:59:28.191+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:59:28.191+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-07T23:59:28.207+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:59:28.207+0000] {dag.py:3954} INFO - Setting next_dagrun for 5.2_orquestacion to 2024-05-06 07:00:00+00:00, run_after=2024-05-13 07:00:00+00:00
+[2024-05-07T23:59:28.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.116 seconds
+[2024-05-07T23:59:58.632+0000] {processor.py:161} INFO - Started process (PID=4502) to work on /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:59:58.633+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/052_orquestacion.py for tasks to queue
+[2024-05-07T23:59:58.634+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:59:58.634+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:59:58.649+0000] {processor.py:840} INFO - DAG(s) '5.2_orquestacion' retrieved from /opt/airflow/dags/052_orquestacion.py
+[2024-05-07T23:59:58.678+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:59:58.677+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-07T23:59:58.711+0000] {logging_mixin.py:188} INFO - [2024-05-07T23:59:58.711+0000] {dag.py:3954} INFO - Setting next_dagrun for 5.2_orquestacion to 2024-05-06 07:00:00+00:00, run_after=2024-05-13 07:00:00+00:00
+[2024-05-07T23:59:58.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/052_orquestacion.py took 0.099 seconds

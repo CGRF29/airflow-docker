@@ -1,0 +1,45 @@
+[2024-05-09T20:01:22.543+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-09T20:01:22.560+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Confirmacion_NASA scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-09T20:01:22.566+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Confirmacion_NASA scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-09T20:01:22.568+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 5
+[2024-05-09T20:01:22.695+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): Confirmacion_NASA> on 2024-02-01 00:00:00+00:00
+[2024-05-09T20:01:22.701+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1218) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-09T20:01:22.703+0000] {standard_task_runner.py:63} INFO - Started process 1220 to run task
+[2024-05-09T20:01:22.703+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Proyecto_SpaceX', 'Confirmacion_NASA', 'scheduled__2024-02-01T00:00:00+00:00', '--job-id', '972', '--raw', '--subdir', 'DAGS_FOLDER/Proyecto_SpaceX.py', '--cfg-path', '/tmp/tmpk5o73elt']
+[2024-05-09T20:01:22.705+0000] {standard_task_runner.py:91} INFO - Job 972: Subtask Confirmacion_NASA
+[2024-05-09T20:01:22.747+0000] {task_command.py:426} INFO - Running <TaskInstance: Proyecto_SpaceX.Confirmacion_NASA scheduled__2024-02-01T00:00:00+00:00 [running]> on host 7a81a983afb0
+[2024-05-09T20:01:22.820+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Proyecto_SpaceX' AIRFLOW_CTX_TASK_ID='Confirmacion_NASA' AIRFLOW_CTX_EXECUTION_DATE='2024-02-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-01T00:00:00+00:00'
+[2024-05-09T20:01:22.822+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-09T20:01:22.833+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-09T20:01:22.835+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "sleep 20 && echo 'Confirmación, puede proceder' > /tmp/response_20240201.txt"]
+[2024-05-09T20:01:22.844+0000] {subprocess.py:86} INFO - Output:
+[2024-05-09T20:01:42.848+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-09T20:01:42.849+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-09T20:01:42.874+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Proyecto_SpaceX, task_id=Confirmacion_NASA, run_id=scheduled__2024-02-01T00:00:00+00:00, execution_date=20240201T000000, start_date=20240509T200122, end_date=20240509T200142
+[2024-05-09T20:01:42.897+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-09T20:01:42.916+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-09T20:01:42.928+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-10T05:44:57.358+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-10T05:44:57.384+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Confirmacion_NASA scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-10T05:44:57.396+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Confirmacion_NASA scheduled__2024-02-01T00:00:00+00:00 [queued]>
+[2024-05-10T05:44:57.400+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 5
+[2024-05-10T05:44:57.566+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): Confirmacion_NASA> on 2024-02-01 00:00:00+00:00
+[2024-05-10T05:44:57.573+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=529) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-10T05:44:57.575+0000] {standard_task_runner.py:63} INFO - Started process 531 to run task
+[2024-05-10T05:44:57.575+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Proyecto_SpaceX', 'Confirmacion_NASA', 'scheduled__2024-02-01T00:00:00+00:00', '--job-id', '1046', '--raw', '--subdir', 'DAGS_FOLDER/Proyecto_SpaceX.py', '--cfg-path', '/tmp/tmpulifgrud']
+[2024-05-10T05:44:57.578+0000] {standard_task_runner.py:91} INFO - Job 1046: Subtask Confirmacion_NASA
+[2024-05-10T05:44:57.641+0000] {task_command.py:426} INFO - Running <TaskInstance: Proyecto_SpaceX.Confirmacion_NASA scheduled__2024-02-01T00:00:00+00:00 [running]> on host 1b7f0b10dd99
+[2024-05-10T05:44:57.774+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Proyecto_SpaceX' AIRFLOW_CTX_TASK_ID='Confirmacion_NASA' AIRFLOW_CTX_EXECUTION_DATE='2024-02-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-01T00:00:00+00:00'
+[2024-05-10T05:44:57.776+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-10T05:44:57.794+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-10T05:44:57.796+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "sleep 20 && echo 'Confirmación, puede proceder' > /tmp/response_20240201.txt"]
+[2024-05-10T05:44:57.809+0000] {subprocess.py:86} INFO - Output:
+[2024-05-10T05:45:17.815+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-10T05:45:17.830+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-10T05:45:17.860+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Proyecto_SpaceX, task_id=Confirmacion_NASA, run_id=scheduled__2024-02-01T00:00:00+00:00, execution_date=20240201T000000, start_date=20240510T054457, end_date=20240510T054517
+[2024-05-10T05:45:17.900+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-10T05:45:17.910+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

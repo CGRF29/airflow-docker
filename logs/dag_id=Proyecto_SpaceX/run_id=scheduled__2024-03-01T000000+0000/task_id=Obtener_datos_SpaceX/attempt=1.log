@@ -1,0 +1,80 @@
+[2024-05-09T19:18:36.195+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-09T19:18:36.213+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Obtener_datos_SpaceX scheduled__2024-03-01T00:00:00+00:00 [queued]>
+[2024-05-09T19:18:36.221+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Obtener_datos_SpaceX scheduled__2024-03-01T00:00:00+00:00 [queued]>
+[2024-05-09T19:18:36.248+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-09T19:18:36.420+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): Obtener_datos_SpaceX> on 2024-03-01 00:00:00+00:00
+[2024-05-09T19:18:36.427+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=546) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-09T19:18:36.429+0000] {standard_task_runner.py:63} INFO - Started process 550 to run task
+[2024-05-09T19:18:36.429+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Proyecto_SpaceX', 'Obtener_datos_SpaceX', 'scheduled__2024-03-01T00:00:00+00:00', '--job-id', '944', '--raw', '--subdir', 'DAGS_FOLDER/Proyecto_SpaceX.py', '--cfg-path', '/tmp/tmpqpjlj27i']
+[2024-05-09T19:18:36.432+0000] {standard_task_runner.py:91} INFO - Job 944: Subtask Obtener_datos_SpaceX
+[2024-05-09T19:18:37.484+0000] {task_command.py:426} INFO - Running <TaskInstance: Proyecto_SpaceX.Obtener_datos_SpaceX scheduled__2024-03-01T00:00:00+00:00 [running]> on host 7a81a983afb0
+[2024-05-09T19:18:38.274+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Proyecto_SpaceX' AIRFLOW_CTX_TASK_ID='Obtener_datos_SpaceX' AIRFLOW_CTX_EXECUTION_DATE='2024-03-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-01T00:00:00+00:00'
+[2024-05-09T19:18:38.316+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-09T19:18:38.504+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-09T19:18:38.593+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "curl -o /tmp/history.json -L'https://api.spacexdata.com/v4/history'"]
+[2024-05-09T19:18:38.648+0000] {subprocess.py:86} INFO - Output:
+[2024-05-09T19:18:38.650+0000] {subprocess.py:93} INFO - Usage: curl [options...] <url>
+[2024-05-09T19:18:38.650+0000] {subprocess.py:93} INFO -  -d, --data <data>          HTTP POST data
+[2024-05-09T19:18:38.651+0000] {subprocess.py:93} INFO -  -f, --fail                 Fail fast with no output on HTTP errors
+[2024-05-09T19:18:38.651+0000] {subprocess.py:93} INFO -  -h, --help <category>      Get help for commands
+[2024-05-09T19:18:38.660+0000] {subprocess.py:93} INFO -  -i, --include              Include protocol response headers in the output
+[2024-05-09T19:18:38.661+0000] {subprocess.py:93} INFO -  -o, --output <file>        Write to file instead of stdout
+[2024-05-09T19:18:38.662+0000] {subprocess.py:93} INFO -  -O, --remote-name          Write output to a file named as the remote file
+[2024-05-09T19:18:38.662+0000] {subprocess.py:93} INFO -  -s, --silent               Silent mode
+[2024-05-09T19:18:38.663+0000] {subprocess.py:93} INFO -  -T, --upload-file <file>   Transfer local FILE to destination
+[2024-05-09T19:18:38.663+0000] {subprocess.py:93} INFO -  -u, --user <user:password> Server user and password
+[2024-05-09T19:18:38.664+0000] {subprocess.py:93} INFO -  -A, --user-agent <name>    Send User-Agent <name> to server
+[2024-05-09T19:18:38.664+0000] {subprocess.py:93} INFO -  -v, --verbose              Make the operation more talkative
+[2024-05-09T19:18:38.665+0000] {subprocess.py:93} INFO -  -V, --version              Show version number and quit
+[2024-05-09T19:18:38.665+0000] {subprocess.py:93} INFO - 
+[2024-05-09T19:18:38.666+0000] {subprocess.py:93} INFO - This is not the full help, this menu is stripped into categories.
+[2024-05-09T19:18:38.666+0000] {subprocess.py:93} INFO - Use "--help category" to get an overview of all categories.
+[2024-05-09T19:18:38.667+0000] {subprocess.py:93} INFO - For all options use the manual or "--help all".
+[2024-05-09T19:18:38.743+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-09T19:18:38.813+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-09T19:18:39.268+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Proyecto_SpaceX, task_id=Obtener_datos_SpaceX, run_id=scheduled__2024-03-01T00:00:00+00:00, execution_date=20240301T000000, start_date=20240509T191836, end_date=20240509T191839
+[2024-05-09T19:18:39.433+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-09T19:18:39.456+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-09T19:18:39.533+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-09T21:01:57.966+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-09T21:01:58.001+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Obtener_datos_SpaceX scheduled__2024-03-01T00:00:00+00:00 [queued]>
+[2024-05-09T21:01:58.011+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Proyecto_SpaceX.Obtener_datos_SpaceX scheduled__2024-03-01T00:00:00+00:00 [queued]>
+[2024-05-09T21:01:58.012+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-09T21:01:58.171+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): Obtener_datos_SpaceX> on 2024-03-01 00:00:00+00:00
+[2024-05-09T21:01:58.180+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1890) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-09T21:01:58.183+0000] {standard_task_runner.py:63} INFO - Started process 1893 to run task
+[2024-05-09T21:01:58.182+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Proyecto_SpaceX', 'Obtener_datos_SpaceX', 'scheduled__2024-03-01T00:00:00+00:00', '--job-id', '1016', '--raw', '--subdir', 'DAGS_FOLDER/Proyecto_SpaceX.py', '--cfg-path', '/tmp/tmpdziabg5m']
+[2024-05-09T21:01:58.187+0000] {standard_task_runner.py:91} INFO - Job 1016: Subtask Obtener_datos_SpaceX
+[2024-05-09T21:01:58.255+0000] {task_command.py:426} INFO - Running <TaskInstance: Proyecto_SpaceX.Obtener_datos_SpaceX scheduled__2024-03-01T00:00:00+00:00 [running]> on host 7a81a983afb0
+[2024-05-09T21:01:58.345+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Proyecto_SpaceX' AIRFLOW_CTX_TASK_ID='Obtener_datos_SpaceX' AIRFLOW_CTX_EXECUTION_DATE='2024-03-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-01T00:00:00+00:00'
+[2024-05-09T21:01:58.347+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-09T21:01:58.360+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-09T21:01:58.362+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "curl -o /tmp/history.json -L'https://api.spacexdata.com/v4/history'"]
+[2024-05-09T21:01:58.372+0000] {subprocess.py:86} INFO - Output:
+[2024-05-09T21:01:58.379+0000] {subprocess.py:93} INFO - Usage: curl [options...] <url>
+[2024-05-09T21:01:58.380+0000] {subprocess.py:93} INFO -  -d, --data <data>          HTTP POST data
+[2024-05-09T21:01:58.381+0000] {subprocess.py:93} INFO -  -f, --fail                 Fail fast with no output on HTTP errors
+[2024-05-09T21:01:58.381+0000] {subprocess.py:93} INFO -  -h, --help <category>      Get help for commands
+[2024-05-09T21:01:58.382+0000] {subprocess.py:93} INFO -  -i, --include              Include protocol response headers in the output
+[2024-05-09T21:01:58.383+0000] {subprocess.py:93} INFO -  -o, --output <file>        Write to file instead of stdout
+[2024-05-09T21:01:58.384+0000] {subprocess.py:93} INFO -  -O, --remote-name          Write output to a file named as the remote file
+[2024-05-09T21:01:58.385+0000] {subprocess.py:93} INFO -  -s, --silent               Silent mode
+[2024-05-09T21:01:58.385+0000] {subprocess.py:93} INFO -  -T, --upload-file <file>   Transfer local FILE to destination
+[2024-05-09T21:01:58.386+0000] {subprocess.py:93} INFO -  -u, --user <user:password> Server user and password
+[2024-05-09T21:01:58.387+0000] {subprocess.py:93} INFO -  -A, --user-agent <name>    Send User-Agent <name> to server
+[2024-05-09T21:01:58.387+0000] {subprocess.py:93} INFO -  -v, --verbose              Make the operation more talkative
+[2024-05-09T21:01:58.388+0000] {subprocess.py:93} INFO -  -V, --version              Show version number and quit
+[2024-05-09T21:01:58.389+0000] {subprocess.py:93} INFO - 
+[2024-05-09T21:01:58.389+0000] {subprocess.py:93} INFO - This is not the full help, this menu is stripped into categories.
+[2024-05-09T21:01:58.390+0000] {subprocess.py:93} INFO - Use "--help category" to get an overview of all categories.
+[2024-05-09T21:01:58.391+0000] {subprocess.py:93} INFO - For all options use the manual or "--help all".
+[2024-05-09T21:01:58.392+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-09T21:01:58.393+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-09T21:01:58.416+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Proyecto_SpaceX, task_id=Obtener_datos_SpaceX, run_id=scheduled__2024-03-01T00:00:00+00:00, execution_date=20240301T000000, start_date=20240509T210158, end_date=20240509T210158
+[2024-05-09T21:01:58.442+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-09T21:01:58.482+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-09T21:01:58.485+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

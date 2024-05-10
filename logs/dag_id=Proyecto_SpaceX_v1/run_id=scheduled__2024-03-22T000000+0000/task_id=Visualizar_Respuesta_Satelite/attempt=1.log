@@ -1,0 +1,86 @@
+[2024-05-10T06:22:27.580+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-10T06:22:27.714+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Proyecto_SpaceX_v1.Visualizar_Respuesta_Satelite scheduled__2024-03-22T00:00:00+00:00 [queued]>
+[2024-05-10T06:22:27.722+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Proyecto_SpaceX_v1.Visualizar_Respuesta_Satelite scheduled__2024-03-22T00:00:00+00:00 [queued]>
+[2024-05-10T06:22:27.724+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-10T06:22:27.734+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): Visualizar_Respuesta_Satelite> on 2024-03-22 00:00:00+00:00
+[2024-05-10T06:22:27.740+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2026) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-10T06:22:27.742+0000] {standard_task_runner.py:63} INFO - Started process 2028 to run task
+[2024-05-10T06:22:27.742+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Proyecto_SpaceX_v1', 'Visualizar_Respuesta_Satelite', 'scheduled__2024-03-22T00:00:00+00:00', '--job-id', '1279', '--raw', '--subdir', 'DAGS_FOLDER/Proyecto_SpaceX_v1.py', '--cfg-path', '/tmp/tmpl4dy1uvf']
+[2024-05-10T06:22:27.744+0000] {standard_task_runner.py:91} INFO - Job 1279: Subtask Visualizar_Respuesta_Satelite
+[2024-05-10T06:22:27.785+0000] {task_command.py:426} INFO - Running <TaskInstance: Proyecto_SpaceX_v1.Visualizar_Respuesta_Satelite scheduled__2024-03-22T00:00:00+00:00 [running]> on host 1b7f0b10dd99
+[2024-05-10T06:22:27.855+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Proyecto_SpaceX_v1' AIRFLOW_CTX_TASK_ID='Visualizar_Respuesta_Satelite' AIRFLOW_CTX_EXECUTION_DATE='2024-03-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-22T00:00:00+00:00'
+[2024-05-10T06:22:27.856+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-10T06:22:27.867+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-10T06:22:27.868+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'ls /tmp && head /tmp/platzi_data_20240322.csv']
+[2024-05-10T06:22:27.876+0000] {subprocess.py:86} INFO - Output:
+[2024-05-10T06:22:27.878+0000] {subprocess.py:93} INFO - ***tmpxov3yr1n
+[2024-05-10T06:22:27.879+0000] {subprocess.py:93} INFO - history.json
+[2024-05-10T06:22:27.880+0000] {subprocess.py:93} INFO - platzi_data_20231125.csv
+[2024-05-10T06:22:27.880+0000] {subprocess.py:93} INFO - platzi_data_20231126.csv
+[2024-05-10T06:22:27.881+0000] {subprocess.py:93} INFO - platzi_data_20231127.csv
+[2024-05-10T06:22:27.881+0000] {subprocess.py:93} INFO - platzi_data_20240101.csv
+[2024-05-10T06:22:27.882+0000] {subprocess.py:93} INFO - platzi_data_20240201.csv
+[2024-05-10T06:22:27.882+0000] {subprocess.py:93} INFO - platzi_data_20240301.csv
+[2024-05-10T06:22:27.883+0000] {subprocess.py:93} INFO - platzi_data_20240302.csv
+[2024-05-10T06:22:27.883+0000] {subprocess.py:93} INFO - platzi_data_20240303.csv
+[2024-05-10T06:22:27.884+0000] {subprocess.py:93} INFO - platzi_data_20240304.csv
+[2024-05-10T06:22:27.884+0000] {subprocess.py:93} INFO - platzi_data_20240305.csv
+[2024-05-10T06:22:27.885+0000] {subprocess.py:93} INFO - platzi_data_20240306.csv
+[2024-05-10T06:22:27.886+0000] {subprocess.py:93} INFO - platzi_data_20240307.csv
+[2024-05-10T06:22:27.886+0000] {subprocess.py:93} INFO - platzi_data_20240308.csv
+[2024-05-10T06:22:27.887+0000] {subprocess.py:93} INFO - platzi_data_20240309.csv
+[2024-05-10T06:22:27.888+0000] {subprocess.py:93} INFO - platzi_data_20240310.csv
+[2024-05-10T06:22:27.889+0000] {subprocess.py:93} INFO - platzi_data_20240311.csv
+[2024-05-10T06:22:27.889+0000] {subprocess.py:93} INFO - platzi_data_20240312.csv
+[2024-05-10T06:22:27.890+0000] {subprocess.py:93} INFO - platzi_data_20240313.csv
+[2024-05-10T06:22:27.891+0000] {subprocess.py:93} INFO - platzi_data_20240314.csv
+[2024-05-10T06:22:27.891+0000] {subprocess.py:93} INFO - platzi_data_20240316.csv
+[2024-05-10T06:22:27.892+0000] {subprocess.py:93} INFO - platzi_data_20240317.csv
+[2024-05-10T06:22:27.893+0000] {subprocess.py:93} INFO - platzi_data_20240318.csv
+[2024-05-10T06:22:27.893+0000] {subprocess.py:93} INFO - platzi_data_20240319.csv
+[2024-05-10T06:22:27.894+0000] {subprocess.py:93} INFO - platzi_data_20240320.csv
+[2024-05-10T06:22:27.895+0000] {subprocess.py:93} INFO - platzi_data_20240321.csv
+[2024-05-10T06:22:27.896+0000] {subprocess.py:93} INFO - platzi_data_20240322.csv
+[2024-05-10T06:22:27.896+0000] {subprocess.py:93} INFO - pymp-uyxtzsi7
+[2024-05-10T06:22:27.897+0000] {subprocess.py:93} INFO - response_20231125.txt
+[2024-05-10T06:22:27.898+0000] {subprocess.py:93} INFO - response_20231126.txt
+[2024-05-10T06:22:27.898+0000] {subprocess.py:93} INFO - response_20231127.txt
+[2024-05-10T06:22:27.899+0000] {subprocess.py:93} INFO - response_20240101.txt
+[2024-05-10T06:22:27.899+0000] {subprocess.py:93} INFO - response_20240201.txt
+[2024-05-10T06:22:27.900+0000] {subprocess.py:93} INFO - response_20240301.txt
+[2024-05-10T06:22:27.901+0000] {subprocess.py:93} INFO - response_20240302.txt
+[2024-05-10T06:22:27.901+0000] {subprocess.py:93} INFO - response_20240303.txt
+[2024-05-10T06:22:27.902+0000] {subprocess.py:93} INFO - response_20240304.txt
+[2024-05-10T06:22:27.903+0000] {subprocess.py:93} INFO - response_20240305.txt
+[2024-05-10T06:22:27.903+0000] {subprocess.py:93} INFO - response_20240306.txt
+[2024-05-10T06:22:27.904+0000] {subprocess.py:93} INFO - response_20240307.txt
+[2024-05-10T06:22:27.905+0000] {subprocess.py:93} INFO - response_20240308.txt
+[2024-05-10T06:22:27.905+0000] {subprocess.py:93} INFO - response_20240309.txt
+[2024-05-10T06:22:27.906+0000] {subprocess.py:93} INFO - response_20240310.txt
+[2024-05-10T06:22:27.907+0000] {subprocess.py:93} INFO - response_20240311.txt
+[2024-05-10T06:22:27.907+0000] {subprocess.py:93} INFO - response_20240312.txt
+[2024-05-10T06:22:27.908+0000] {subprocess.py:93} INFO - response_20240313.txt
+[2024-05-10T06:22:27.909+0000] {subprocess.py:93} INFO - response_20240314.txt
+[2024-05-10T06:22:27.910+0000] {subprocess.py:93} INFO - response_20240315.txt
+[2024-05-10T06:22:27.910+0000] {subprocess.py:93} INFO - response_20240316.txt
+[2024-05-10T06:22:27.911+0000] {subprocess.py:93} INFO - response_20240317.txt
+[2024-05-10T06:22:27.912+0000] {subprocess.py:93} INFO - response_20240318.txt
+[2024-05-10T06:22:27.912+0000] {subprocess.py:93} INFO - response_20240319.txt
+[2024-05-10T06:22:27.913+0000] {subprocess.py:93} INFO - response_20240320.txt
+[2024-05-10T06:22:27.914+0000] {subprocess.py:93} INFO - response_20240321.txt
+[2024-05-10T06:22:27.914+0000] {subprocess.py:93} INFO - response_20240322.txt
+[2024-05-10T06:22:27.915+0000] {subprocess.py:93} INFO - Student,timestamp
+[2024-05-10T06:22:27.916+0000] {subprocess.py:93} INFO - Maria Cruz,2024-03-22 00:00:00+00:00
+[2024-05-10T06:22:27.916+0000] {subprocess.py:93} INFO - Daniel Crema,2024-03-22 00:00:00+00:00
+[2024-05-10T06:22:27.917+0000] {subprocess.py:93} INFO - Elon Musk,2024-03-22 00:00:00+00:00
+[2024-05-10T06:22:27.918+0000] {subprocess.py:93} INFO - Karol Castrejon,2024-03-22 00:00:00+00:00
+[2024-05-10T06:22:27.919+0000] {subprocess.py:93} INFO - Freddy Vega,2024-03-22 00:00:00+00:00
+[2024-05-10T06:22:27.919+0000] {subprocess.py:93} INFO - Felipe Duque,2024-03-22 00:00:00+00:00
+[2024-05-10T06:22:27.920+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-10T06:22:27.921+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-10T06:22:27.941+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Proyecto_SpaceX_v1, task_id=Visualizar_Respuesta_Satelite, run_id=scheduled__2024-03-22T00:00:00+00:00, execution_date=20240322T000000, start_date=20240510T062227, end_date=20240510T062227
+[2024-05-10T06:22:27.957+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-10T06:22:27.973+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-10T06:22:27.980+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
